@@ -1,0 +1,46 @@
+body {
+    background-color: #FCE166;
+    font-family: Arial;
+}
+
+#output {
+    border-radius: 2px;
+    background-color: #fff;
+    height: 200px;
+    padding: 20px;
+    overflow: scroll;
+    margin-bottom: 10px;
+}
+
+#output-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 36px;
+    color: #000;
+    word-wrap: break-word;
+    margin: 0;
+}
+
+#keyboard {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    background-color: #5a5858;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.key {
+    text-align: center;
+    width: 50px;
+    margin: 1px;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    border-style: inset;
+}
+
+.selected {
+    background-color: darkgrey;
+    border-style: outset;
+}

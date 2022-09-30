@@ -1,0 +1,26 @@
+height: 200px;
+background-color: #0099ff;
+
+width: calc(100% / 2 - 10px);
+display: inline-block;
+
+height: 75px;
+background-color: #c9c9c9;
+
+height: 200px;
+
+margin: 5px;
+
+width: calc(100% / 4 - 10px);
+height: 200px;
+
+height: 150px;
+
+height: 100px;
+background-color: #00bb00;
+
+width: calc(100% / 3 - 10px);
+display: inline-block;
+height: 300px;
+
+height: 300px;

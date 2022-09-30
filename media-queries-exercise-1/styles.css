@@ -1,0 +1,31 @@
+.box {
+}
+
+.green-box {
+}
+
+.blue-box {
+}
+
+.grey-box {
+}
+
+/*** Media Queries Below ***/
+
+@media (min-width: 600px) {
+    .green-box {
+    }
+    .blue-box {
+    }
+    .grey-box {
+    }
+}
+
+@media (min-width: 900px) {
+    .green-box {
+    }
+    .blue-box {
+    }
+    .grey-box {
+    }
+}
