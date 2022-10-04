@@ -13,8 +13,35 @@
             <h1>Get in touch!</h1>
         </header>
 
-        <form action="" method="">
-            <!-- your code here -->
+        <form action="https://formspree.io/f/mdojzdvg" method="post">
+            <div class="form-item">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="your preferred name">
+            </div>
+            <div class="form-item">
+                <label for="mail">Email</label>
+                <input type="email" id="mail" name="email" placeholder="example@xx.com">
+            </div>
+            <div class="form-item">
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            <div class="form-item">
+                <button type="submit">Send</button>
+            </div>
+            <div class="form-item">
+                <input type="reset" value="reset">
+            </div>
+            
+            <fieldset>
+                <legend>Choose your preferred language</legend>
+                <input type="radio" id="russian" name="language" value="R">
+                <label for="russian">Russian</label><br>
+                <input type="radio" id="hindi" name="language" value="H">
+                <label for="hindi">Hindi</label><br>
+                <input type="radio" id="french" name="language" value="F">
+                <label for="french">French</label>
+            </fieldset>
         </form>
 
     </body>

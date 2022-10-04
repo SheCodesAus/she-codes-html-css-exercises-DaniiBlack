@@ -1,31 +1,48 @@
 .box {
+    margin: 5px;
 }
 
 .green-box {
+    height: 100px;
+    background-color: #00bb00;
 }
 
 .blue-box {
+    height: 200px;
+    background-color: #0099ff;
 }
 
 .grey-box {
+    height: 75px;
+    background-color: #c9c9c9;
 }
 
 /*** Media Queries Below ***/
 
 @media (min-width: 600px) {
     .green-box {
+        height: 200px;
     }
     .blue-box {
+        height: 150px;
     }
     .grey-box {
+        width: calc(100% / 2 - 12px);
+        display: inline-block;
     }
 }
 
 @media (min-width: 900px) {
     .green-box {
+        height: 300px;
     }
     .blue-box {
+        width: calc(100% / 3 - 13px);
+        display: inline-block;
+        height: 300px;
     }
     .grey-box {
+        width: calc(100% / 4 - 14px);
+        height: 200px;
     }
 }
