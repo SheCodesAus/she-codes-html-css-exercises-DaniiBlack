@@ -28,6 +28,7 @@ h2 {
 }
 
 nav {
+    width: 200px;
     margin: 10px;
     padding: 10px;
     background-color: #999999;
@@ -63,4 +64,35 @@ footer {
     color: #fff;
 }
 
-/* Your code here */
+/* Your code here
+
+CSS properties
+    display inline & block
+    width & height: by default will use parent's width and height unless otherwise specified 
+    margin: creates extra space *around* the elem
+    padding: creates extra space *within* an elem
+    border: width; style; color
+
+*/
+
+nav a {
+    display: block;
+}
+
+#cupake-1-img {
+    width: 300px;
+    height: 200px;
+    border: 3px dashed orange;
+}
+
+header {
+    margin: 20px;
+    padding: 20px;
+}
+
+/* 
+hack to make changes of padding/ margin et al to add border to every elem on the page 
+* {
+    border: 1px solid grey;
+} 
+*/
