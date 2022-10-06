@@ -18,7 +18,14 @@ body {
     background-color: lightcoral;
 }
 
-/* also works but probably not best practice (including adding the class to the html tag);
+/*
+
+CSS selectors
+type: match a given <tag> name
+class: match a given class attr | multiple elem to have same matching styles
+ID: match a given id attr | one elem to have styles applied
+
+note: also works for changing a tag background-colors, but probably not best practice (including adding the class to the html tag);
 .class-nav-item {
     background-color: mediumpurple
 } */
@@ -30,3 +37,4 @@ a {
 #id-nav-item {
     background-color: gold;
 }
+
