@@ -1,0 +1,32 @@
+body {
+    background-color: lavender;
+}
+
+#div-id {
+    background-color: peachpuff;
+}
+
+.list-item {
+    background-color: darkseagreen;
+}
+
+.main-heading {
+    background-color: lightskyblue;
+}
+
+#first-paragraph {
+    background-color: lightcoral;
+}
+
+/* also works but probably not best practice (including adding the class to the html tag);
+.class-nav-item {
+    background-color: mediumpurple
+} */
+
+a {
+    background-color: mediumpurple;
+}
+
+#id-nav-item {
+    background-color: gold;
+}

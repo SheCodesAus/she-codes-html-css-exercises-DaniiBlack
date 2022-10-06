@@ -1,3 +1,8 @@
+<!-- 
+    .class = multi elements to have same style applied 
+    #id = one element to have styles applied.  
+-->
+
 <!doctype html>
 
 <html lang="en">
@@ -10,21 +15,21 @@
     </head>
     <body>
         <header>
-            <h1>H1 Title</h1>
-            <h2>H2 Title</h2>
+            <h1 class="main-heading">H1 Title</h1>
+            <h2 class="main-heading">H2 Title</h2>
             <nav>
                 <a href="#">Nav Item 1</a>
                 <a href="#">Nav Item 2</a>
-                <a href="#">Nav Item 3</a>
+                <a href="#" id="id-nav-item">Nav Item 3</a>
             </nav>
         </header>
-        <div>
-            <p>A paragraph tag, in a div tag.</p>
+        <div id="div-id">
+            <p id="first-paragraph">A paragraph tag, in a div tag.</p>
             <img src="logo.png" alt="She Codes Logo.">
             <p>Another paragraph tag, in a div.</p>
             <ul>
-                <li>List Item 1</li>
-                <li>List Item 2</li>
+                <li class="list-item">List Item 1</li>
+                <li class="list-item">List Item 2</li>
                 <li>List Item 3</li>
             </ul>
         </div>
