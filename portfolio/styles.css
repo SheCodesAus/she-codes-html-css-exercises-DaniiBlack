@@ -1,5 +1,45 @@
-ul li {
+h1 {
+    margin: 10px;
+}
+
+body {
+    display: flex;
+    margin: 0;
+}
+
+main {
+    vertical-align: top;
+    margin: 10px;
+    flex-grow: 1;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+nav {
+    padding: 10px;
+    display: flex;
+    flex-grow: 1;
+    /* width: 150px; */
+}
+
+.hamburger {
+    display: none;
+    background-color: transparent;
+    border: none;
+}
+
+ul {
     list-style-type: none;
+    padding: 0px;
+    margin: 0px;
 }
 
 ul li a {
@@ -11,35 +51,62 @@ a:hover, a:active {
     color: grey;
 }
 
-.dropbtn {
-    display: none;
+.nav-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    /* width: 150px; */
 }
 
-.dropdown-content {
-    position: absolute;
+.socials {
+    display: flex;
+    margin-top: auto;
+    justify-content: space-around;
 }
 
-header {
-    display: inline-block;
+fieldset {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+label, input {
+    padding: 5px;
+}
+
+.contactbtn {
+    padding: 5px;
+    margin: 5px;
+    width: 100px;
+    align-self: center;
+
 }
 
 @media (max-width: 600px) {
-    .dropbtn {
-        display: block;
+    body {
+        flex-direction: column;
     }
-
-    ul {
-        display: none;
+    header {
+        flex-direction: row;
+        height: 50px;
     }
-
     nav {
-        position: relative;
-        float: right;
+        margin-left: auto;
+        min-width: 100px;
+        background-color: white;
+        flex-grow: 0;
     }
-
-    nav:hover ul {
+    .hamburger {
+        display: block;
+        margin-left: auto;
+    }
+    .nav-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        padding: 20px;
+    }
+    nav:hover .nav-content {
         display: block;
     }
-
-
 }
