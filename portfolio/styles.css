@@ -94,13 +94,23 @@ label, input {
 
 img {
     flex: 2;
-    width: 45%;
+    width: 100%;
     display: block;
     float: left;
     flex: 0 0 auto;
     background-color: #fff;
     padding: 10px;
     align-self: center;
+}
+
+.img-col {
+    flex: 2;
+    width: 45%;
+    
+}
+
+.about {
+    max-width: 600px;
 }
 
 @media (max-width: 600px) {
