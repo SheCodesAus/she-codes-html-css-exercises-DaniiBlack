@@ -79,7 +79,28 @@ label, input {
     margin: 5px;
     width: 100px;
     align-self: center;
+}
 
+.images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    padding: 0;
+    max-width: 980px;
+    margin-top: 50px;
+}
+
+img {
+    flex: 2;
+    width: 45%;
+    display: block;
+    float: left;
+    flex: 0 0 auto;
+    background-color: #fff;
+    padding: 10px;
+    align-self: center;
 }
 
 @media (max-width: 600px) {
