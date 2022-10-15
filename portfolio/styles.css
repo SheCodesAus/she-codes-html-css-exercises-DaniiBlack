@@ -1,0 +1,45 @@
+ul li {
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover, a:active {
+    color: grey;
+}
+
+.dropbtn {
+    display: none;
+}
+
+.dropdown-content {
+    position: absolute;
+}
+
+header {
+    display: inline-block;
+}
+
+@media (max-width: 600px) {
+    .dropbtn {
+        display: block;
+    }
+
+    ul {
+        display: none;
+    }
+
+    nav {
+        position: relative;
+        float: right;
+    }
+
+    nav:hover ul {
+        display: block;
+    }
+
+
+}
