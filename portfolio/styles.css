@@ -1,0 +1,143 @@
+h1 {
+    margin: 10px;
+}
+
+body {
+    display: flex;
+    margin: 0;
+}
+
+main {
+    vertical-align: top;
+    margin: 10px;
+    flex-grow: 1;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+nav {
+    padding: 10px;
+    display: flex;
+    flex-grow: 1;
+    /* width: 150px; */
+}
+
+.hamburger {
+    display: none;
+    background-color: transparent;
+    border: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover, a:active {
+    color: grey;
+}
+
+.nav-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    /* width: 150px; */
+}
+
+.socials {
+    display: flex;
+    margin-top: auto;
+    justify-content: space-around;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+label, input {
+    padding: 5px;
+}
+
+.contactbtn {
+    padding: 5px;
+    margin: 5px;
+    width: 100px;
+    align-self: center;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    padding: 0;
+    max-width: 980px;
+    margin-top: 50px;
+}
+
+img {
+    flex: 2;
+    width: 100%;
+    display: block;
+    float: left;
+    flex: 0 0 auto;
+    background-color: #fff;
+    padding: 10px;
+    align-self: center;
+}
+
+.img-col {
+    flex: 2;
+    width: 45%;
+    
+}
+
+.about {
+    max-width: 600px;
+}
+
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+    header {
+        flex-direction: row;
+        height: 50px;
+    }
+    nav {
+        margin-left: auto;
+        min-width: 100px;
+        background-color: white;
+        flex-grow: 0;
+    }
+    .hamburger {
+        display: block;
+        margin-left: auto;
+    }
+    .nav-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        padding: 20px;
+    }
+    nav:hover .nav-content {
+        display: block;
+    }
+}
