@@ -1,10 +1,17 @@
-h1 {
-    margin: 10px;
+h1, h2 {
+    margin: 0px;
+    color: black;
+}
+
+h2 {
+    margin-top: 20px;
 }
 
 body {
     display: flex;
     margin: 0;
+    font-family: 'IBM Plex Sans';
+    color: grey;
 }
 
 main {
@@ -20,6 +27,7 @@ header {
     height: 100vh;
     position: sticky;
     top: 0;
+    padding: 10px;
     background-color: white;
 }
 
@@ -49,6 +57,10 @@ ul li a {
 
 a:hover, a:active {
     color: grey;
+}
+
+ul li a:visited {
+    color: black;
 }
 
 .nav-content {
@@ -99,7 +111,9 @@ img {
     float: left;
     flex: 0 0 auto;
     background-color: #fff;
-    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
     align-self: center;
 }
 
@@ -132,10 +146,10 @@ img {
         margin-left: auto;
     }
     .nav-content {
-        display: none;
+        /* display: none;
         position: absolute;
         background-color: white;
-        padding: 20px;
+        padding: 20px; */
     }
     nav:hover .nav-content {
         display: block;
