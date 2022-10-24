@@ -6,26 +6,37 @@
         <title>Portfolio</title>
         <meta name="description" content="portfolio">
         <meta name="author" content="portfolio">
+        <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans' rel='stylesheet'>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header id="header">
+        <header role="banner" id="header">
             <!-- create link and 'skip to main content' aria labels here, maybe? Inside a div of site-branding? -->
-            <a href="index.html"><h1>Dani Black</h1></a>
-            <nav role="navigation" aria-label="Primary Navigation">
-                <button role="button" aria-label="open menu" class="hamburger">
-                    <svg viewBox="0 0 100 80" width="20" height="20">
-                        <rect width="100" height="20"></rect>
-                        <rect y="30" width="100" height="20"></rect>
-                        <rect y="60" width="100" height="20"></rect>
-                  </svg>
-                </button>
-                <div class="nav-content">
-                    <ul class="menu">
+            <!-- <div>
+                <p class="site-title"><a href="index.html">Dani Black</a></p>
+                <p class="site-description">Web accessibility practitioner</p>
+            </div> -->
+            <!-- <a href="index.html"><h1>Dani Black</h1></a> -->
+            <a class="title-nav" href="index.html"> <h1>Dani Black</h1></a>
+            <!-- site branding -->
+                <nav role="navigation" aria-label="Primary Navigation">
+                   <!--  <div class="menu-button-container">
+                        <button role="button" aria-label="open menu" class="hamburger">
+                            <svg viewBox="0 0 100 80" width="20" height="20">
+                                <rect width="100" height="20"></rect>
+                                <rect y="30" width="100" height="20"></rect>
+                                <rect y="60" width="100" height="20"></rect>
+                          </svg>
+                        </button> -->
+                </div>
+                    <ul class="site-navigation">
                         <li class="nav-item"><a href="portfolio.html">This woman's work..</a></li>
                         <li class="nav-item"><a href="blake.html">Blake pics</a></li>
                         <li class="nav-item"><a href="contact.html">Contact</a></li>
                     </ul>
+                <!-- </nav> -->
+                <!-- social media links -->
+                <!-- apparently are not supposed to go inside a nav role=navigation, for a11y -->
                     <ul class="socials">
                         <li>
                             <a href="https://www.linkedin.com/in/dani-black" target="_blank">
@@ -46,14 +57,32 @@
                             </a>
                         </li>
                     </ul>
-                </div>
-            </nav>
+                    </nav>
+            <!-- #site-navigation -->
         </header>
-        <main class="about">
-            <h2>Portfolio</h2>
-        </main>
 
-        <footer>
-        </footer>
+        <main role="main">
+            <h2>Portfolio: This woman's work</h2>
+            <article>
+
+            </article>
+            <article>
+
+            </article>
+            <article>
+
+            </article>
+        </main>
+<!-- 
+        <aside role="complimentary">
+            <h2>Sidebar</h2>
+            <p>complimentary content</p>
+        </aside> -->
+
+        <!-- <footer role="contentinfo">
+            <h2>
+                <p>Information about the document</p>
+            </h2>
+        </footer> -->
     </body>
 </html>
