@@ -24,14 +24,18 @@
                         <label for="name">What is your name?</label>
                         <input type="text" id="name" name="name">
                     </div>
-                    <input type="button" value="submit">
+                    <input type="button" onclick="showName()" value="submit">
                 </form>
+                <p id="greeting.text"></p>
             </div>
 
             <div id="colour" class="component">
                 <h2>Background Colour</h2>
                 <p>Pick a colour:</p>
                 <input type="button" onclick="changeColour('#f74850')" value="red">
+                <input type="button" onclick="changeColour('#0000ff')" value="blue">
+                <input type="button" onclick="changeColour('#2fbc2f')" value="green">
+                <input type="button" onclick="changeColour('#FFC0CB')" value="pink">
                 <input type="button" onclick="resetColour()" value="reset">
             </div>
 
@@ -45,5 +49,6 @@
                 </div>
             </div>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
