@@ -6,24 +6,25 @@
         <title>Contact</title>
         <meta name="description" content="portfolio">
         <meta name="author" content="portfolio">
+        <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans' rel='stylesheet'>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header id="header">
-            <h1>Dani Black</h1>
+        <header role="banner" id="header">
+            <!-- create link and 'skip to main content' aria labels here, maybe? Inside a div of site-branding? -->
+            <a class="title-nav" href="index.html"> <h1>Dani Black</h1></a>
             <nav role="navigation" aria-label="Primary Navigation">
-                <button role="button" aria-label="open menu" class="hamburger">
-                    <svg viewBox="0 0 100 80" width="20" height="20">
-                        <rect width="100" height="20"></rect>
-                        <rect y="30" width="100" height="20"></rect>
-                        <rect y="60" width="100" height="20"></rect>
-                  </svg>
-                </button>
-                <div class="nav-content">
-                    <ul class="menu">
-                        <li class="nav-item"><a href="index.html">About</a></li>
+                    <!-- <button role="button" aria-label="open menu" class="hamburger">
+                        <svg viewBox="0 0 100 80" width="20" height="20">
+                            <rect width="100" height="20"></rect>
+                            <rect y="30" width="100" height="20"></rect>
+                            <rect y="60" width="100" height="20"></rect>
+                      </svg> -->
+                    </button>
+                    <ul class="site-navigation">
+                        <li class="nav-item"><a href="portfolio.html">This woman's work..</a></li>
                         <li class="nav-item"><a href="blake.html">Blake pics</a></li>
-                        <li class="nav-item"><a href="contact.html">Contact me</a></li>
+                        <li class="nav-item"><a href="contact.html">Contact</a></li>
                     </ul>
                     <ul class="socials">
                         <li>
@@ -45,12 +46,11 @@
                             </a>
                         </li>
                     </ul>
-                </div>
             </nav>
         </header>
-        <main>
+        <main role="main">
                 <!-- <h2>Get in touch!</h2> -->
-    
+            <h2>Contact this woman..</h2>
             <form action="https://formspree.io/f/mdojzdvg" method="post">
                 <fieldset>
                     <legend>Contact form</legend>

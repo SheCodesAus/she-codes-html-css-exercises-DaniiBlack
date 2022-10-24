@@ -1,16 +1,16 @@
-h1 {
-    margin: 10px;
-}
+/* * {
+    border: 1px solid rgb(56, 55, 55);
+} */
 
 body {
     display: flex;
-    margin: 0;
+    margin: 0px;
+    font-family: 'IBM Plex Sans';
+    /* color: grey; */
 }
 
-main {
-    vertical-align: top;
+h1 {
     margin: 10px;
-    flex-grow: 1;
 }
 
 header {
@@ -24,16 +24,25 @@ header {
 }
 
 nav {
-    padding: 10px;
+    padding: 0px;
     display: flex;
     flex-grow: 1;
-    /* width: 150px; */
+    flex-direction: column;
 }
 
-.hamburger {
-    display: none;
-    background-color: transparent;
-    border: none;
+.socials {
+    display: flex;
+    margin-top: auto;
+    justify-content: space-around;
+}
+/* .hamburger {
+
+} */
+
+main {
+    vertical-align: top;
+    margin: 50px 10px 10px 10px;
+    flex-grow: 1;
 }
 
 ul {
@@ -42,26 +51,25 @@ ul {
     margin: 0px;
 }
 
-ul li a {
-    text-decoration: none;
+a {
     color: black;
+}
+
+ul li a {
+    list-style-type: none;
+    text-decoration: none;
 }
 
 a:hover, a:active {
     color: grey;
 }
 
-.nav-content {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    /* width: 150px; */
+ul li {
+    color: black;
 }
 
-.socials {
-    display: flex;
-    margin-top: auto;
-    justify-content: space-around;
+.site-navigation li {
+    padding: 10px;
 }
 
 fieldset {
@@ -99,13 +107,15 @@ img {
     float: left;
     flex: 0 0 auto;
     background-color: #fff;
-    padding: 10px;
     align-self: center;
+    border-radius: 5px;
+    padding-bottom: 2px;
 }
 
 .img-col {
     flex: 2;
     width: 45%;
+    padding: 1px;
     
 }
 
@@ -113,7 +123,20 @@ img {
     max-width: 600px;
 }
 
-@media (max-width: 600px) {
+aside {
+    margin: 80px 10px 10px 10px;
+}
+
+.title-nav {
+    text-decoration: none;
+    color: black;
+}
+
+/* .socials {
+    width: 120px;
+} */
+
+@media (max-width: 1024px) {
     body {
         flex-direction: column;
     }
@@ -122,22 +145,51 @@ img {
         height: 50px;
     }
     nav {
-        margin-left: auto;
-        min-width: 100px;
         background-color: white;
-        flex-grow: 0;
+        flex-grow: 1;
+        padding-top: 10px;
+        flex-direction: row;
     }
-    .hamburger {
-        display: block;
-        margin-left: auto;
+    .site-navigation {
+        flex-direction: row;
+        display: flex;
+        margin-top: auto;
+        justify-content: space-around;
+        flex-grow: 1;
     }
-    .nav-content {
-        display: none;
-        position: absolute;
-        background-color: white;
-        padding: 20px;
+
+    .socials {
+        min-width: 120px;
+        padding: 5px;
     }
-    nav:hover .nav-content {
-        display: block;
+    main {
+        margin: 10px;
     }
+    aside {
+        margin: 10px;
+    }
+
+}
+
+@media (max-width: 640px) {
+    header {
+        flex-direction: column;
+        height: 200px;
+    }
+
+    nav {
+        flex-direction: column;
+
+    }
+
+    .site-navigation {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .socials {
+        width: 80px;
+        align-self: center;
+    }
+
 }
