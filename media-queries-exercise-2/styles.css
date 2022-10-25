@@ -1,3 +1,13 @@
+/* 
+h2
+button
+cream 
+*/
+
+/* * {
+    border: 1px solid grey;
+}  */
+
 html {
     background-color: #00d982;
     font-family: Arial, Helvetica, sans-serif;
@@ -17,9 +27,13 @@ h2 {
     background-color: #5e7992;
     color: #fff;
     font-size: 1rem;
+    text-align: center;
+    margin: 0px;
+    padding: 15px;
 }
 
 p {
+
 }
 
 form {
@@ -31,21 +45,28 @@ form {
 label {
     font-weight: bold;
     color: #5e7992;
+    width: 100%;
 }
 
 input {
     box-sizing: border-box;
     border: 1px solid #ebeeef;
     background-color: #f9fafa;
+    width: 100%;
+    margin-top: 10px;
+    line-height: 30px;
 }
 
 .form-item {
+    padding: 10px 20px 10px 20px;
 }
 
 button {
     background-color: #00d982;
     border: none;
     color: #fff;
+    width: 100%;
+    padding: 15px;
 }
 
 input,

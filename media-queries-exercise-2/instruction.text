@@ -1,0 +1,12 @@
+On the right is a screenshot of a website at three different screen
+sizes
+    - less than 600px wide
+    - between 600
+    - 900px wide
+    - and larger than 900px wide
+
+The starter code has all the HTML for the page
+but a lot of the CSS is missing.
+
+Your job is to complete the CSS to match the styles below.
+You will need min media queries at 600px and 900px
